@@ -1,0 +1,191 @@
+{
+	"info": {
+		"_postman_id": "bd4a2fdf-6920-4a1c-8544-2131e3817cc9",
+		"name": "Appoinment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16910958"
+	},
+	"item": [
+		{
+			"name": "getList",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/controller/appoinment",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"controller",
+						"appoinment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"date\" : \"30-10-2022\",\r\n    \"hour\" : \"15:50\",\r\n    \"idTest\" : \"1\",\r\n    \"idAffiliate\" : \"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/controller/appoinment",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"controller",
+						"appoinment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "put",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idAppoinment\" : \"6\",\r\n    \"date\" : \"10-10-2022\",\r\n    \"hour\" : \"00:00\",\r\n    \"idTest\" : \"1\",\r\n    \"idAffiliate\" : \"2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/controller/appoinment",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"controller",
+						"appoinment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/controller/appoinment/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"controller",
+						"appoinment",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/controller/appoinment/jhjk",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"controller",
+						"appoinment",
+						"jhjk"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getByDate",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/controller/appoinment/searchByDate?dateAppoinment=30-10-2022",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"controller",
+						"appoinment",
+						"searchByDate"
+					],
+					"query": [
+						{
+							"key": "dateAppoinment",
+							"value": "30-10-2022"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getByAffiliate",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/controller/appoinment/searchByIdAffiliate?idAffiliate=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"controller",
+						"appoinment",
+						"searchByIdAffiliate"
+					],
+					"query": [
+						{
+							"key": "idAffiliate",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
